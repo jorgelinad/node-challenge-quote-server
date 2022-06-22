@@ -39,7 +39,7 @@ app.get('/quotes/search', function(request, response) {
   if(filteredQuotes.length == 0) {
     response.status(404).send(filteredQuotes);
   }
-  response.send(quotes)
+  response.send(filteredQuotes)
 });
 
 ///..END OF YOUR CODE
